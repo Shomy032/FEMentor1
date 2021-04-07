@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;500;600;700;800;900&family=Lexend+Deca&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Lexend Deca' ,'Big Shoulders Display',sans-serif ;
+  padding: 0;
+  margin: 0 ;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 90%) ;
+}
+.wrap{
+  width: 900px;
+  height: 450px;
+border-radius: 0.5rem;
+overflow: hidden;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+background-color: none;
+}
+
+#cart{
+width: 300px;
+height: 100%;
+padding: 3rem 4rem;
+
+
+}
+.cart1{
+  background-color: hsl(31, 77%, 52%);
+}
+
+.cart2{
+  background-color: hsl(184, 100%, 22%);
+}
+.cart3 {
+  background-color: hsl(179, 100%, 13%);
+}
+h2{
+  font-family: 'Big Shoulders Display' , sans-serif;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+p{
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 0.7rem
+}
+button{
+margin-top: 5rem;
+
+  font-size: 15px;
+  padding: 0.5rem 2rem;
+  color: black;
+  background-color: white;
+  border-radius: 2rem;
+  outline: none;
+
+  border: solid 2px white;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+button:focus{
+  outline: none;
+}
+
+button:hover{
+background-color: transparent;
+color: white;
+}
+
+.b1{
+  color: hsl(31, 77%, 52%);;
+}
+.b2{
+  color: hsl(184, 100%, 22%);
+}
+.b3{
+  color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width:870px) {
+.wrap{
+  flex-direction: column;
+  overflow: auto;
+  height: auto;
+  margin: 3rem auto;
+  width: 250px;
+}
+.cart{
+  width: 100%;
+}
+button{
+  margin-top: 3rem;
+}
+}
